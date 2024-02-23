@@ -7,11 +7,15 @@ function incrementarContador() {
   contador.value++
 }
 function decrementarContador() {
+  if(contador.value>0){
   contador.value--
+  }
+
 }
 function zerarContador() {
   contador.value=0
 }
+
 
 onMounted(() => {
   console.log(`O valor inicial do contador é ${contador.value}.`)
